@@ -1,6 +1,6 @@
 import React from 'react';
-// import CursorSpotlight from '../src/components/CursorSpotlight';
-import { CursorSpotlight } from '../build/src';
+import CursorSpotlight from '../src/components/CursorSpotlight';
+// import { CursorSpotlight } from '../build/src';
 
 export default {
   title: 'CursorSpotlight', // 스토리북에서 보여질 그룹과 경로를 명시
