@@ -1,0 +1,1 @@
+export { default as CursorSpotlight } from "./components/CursorSpotlight/index.jsx";
