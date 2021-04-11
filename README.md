@@ -1,8 +1,10 @@
 # react-cursor-spotlight
 
+![demo_gif](docs/demo.gif)
+
 It is a react component that implements the cursor spotlight effect on mousemove.
 
-[Demo](https://hmu332233.github.io/react-cursor-spotlight/?path=/docs/cursorspotlight--basic)
+[Demo](https://hmu332233.github.io/react-cursor-spotlight)
 
 ## Install
 ```bash

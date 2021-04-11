@@ -6,8 +6,8 @@
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook --ci -p 3000",
-    "storybook:build": "build-storybook -o docs",
-    "storybook:deploy": "gh-pages -d docs"
+    "storybook:build": "build-storybook",
+    "storybook:deploy": "gh-pages -d storybook-static"
   },
   "repository": {
     "type": "git",
