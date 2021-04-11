@@ -17,18 +17,20 @@ const useMousePoistion = () => {
   };
 };
 
-function CursorSpotlight(props) {
+function CursorSpotlight({ className = '', spotlightStyle, children }) {
+  const { width, height, radius, backgroundColor } = spotlightStyle;
   const { x, y, handler } = useMousePoistion();
 
   return (
-    <div className={styles.CursorSpotlight} onMouseMove={handler}>
-      {props.children}
+    <div className={`${styles.CursorSpotlight} ${className}`} onMouseMove={handler}>
+      {children}
       <div
         className={styles.CursorSpotlight__view}
         style={{
-          width: props.viewStyle.width,
-          height: props.viewStyle.height,
-          borderRadius: props.viewStyle.radius,
+          width,
+          height,
+          borderRadius: radius,
+          borderColor: backgroundColor,
           left: `${x}px`,
           top: `${y}px`,
         }}
@@ -38,14 +40,16 @@ function CursorSpotlight(props) {
 }
 
 CursorSpotlight.propTypes = {
-  viewStyle: PropTypes.shape({
+  className: PropTypes.string,
+  spotlightStyle: PropTypes.shape({
     width: PropTypes.string,
     height: PropTypes.string,
     radius: PropTypes.string,
+    backgroundColor: PropTypes.string,
   }),
 };
 CursorSpotlight.defaultProps = {
-  viewStyle: {},
+  spotlightStyle: {},
 };
 
 export default CursorSpotlight;
