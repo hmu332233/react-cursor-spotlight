@@ -7,14 +7,41 @@ export default {
   component: CursorSpotlight // 어떤 컴포넌트를 문서화 할지 명시
 };
 
+
+
 export const basic = () => (
   <CursorSpotlight>
     <div style={{ background: '#efefef'}}>
-      예시입니다. 예시입니다.<br />
-      예시입니다. 예시입니다.<br />
-      예시입니다. 예시입니다.<br />
-      예시입니다. 예시입니다.<br />
-      예시입니다. 예시입니다.
+      Example Example Example Example Example Example<br/>
+      Example Example Example Example Example Example<br/>
+      Example Example Example Example Example Example<br/>
+      Example Example Example Example Example Example<br/>
+      Example Example Example Example Example Example<br/>
+      Example Example Example Example Example Example<br/>
+      Example Example Example Example Example Example<br/>
     </div>
   </CursorSpotlight>
 );
+
+export const customSpotlight = () => {
+  const spotlightStyle = {
+    width: '50px',
+    height: '50px',
+    radius: '0%',
+    backgroundColor: '#fff',
+  };
+
+  return (
+    <CursorSpotlight spotlightStyle={spotlightStyle}>
+      <div style={{ background: '#efefef'}}>
+        Example Example Example Example Example Example<br/>
+        Example Example Example Example Example Example<br/>
+        Example Example Example Example Example Example<br/>
+        Example Example Example Example Example Example<br/>
+        Example Example Example Example Example Example<br/>
+        Example Example Example Example Example Example<br/>
+        Example Example Example Example Example Example<br/>
+      </div>
+    </CursorSpotlight>
+  );
+};
