@@ -2,11 +2,11 @@
   "name": "react-cursor-spotlight",
   "version": "0.0.1",
   "description": "",
-  "module": "dist/src/index.js",
+  "module": "build/src/index.js",
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook --ci -p 3000",
-    "build-storybook": "build-storybook"
+    "storybook:build": "build-storybook"
   },
   "repository": {
     "type": "git",
